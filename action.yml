@@ -1,0 +1,17 @@
+name: 'multimerge'
+description: 'Merges a source branch into multiple branches'
+inputs:
+  token:
+    description: 'Authentication token - Github'
+    required: true
+    default: ${{ github.token }}
+  source:
+    description: 'Branch to be merged in the target branches'
+    required: true
+    default: ${{ github.ref }}
+  targets:
+    description: 'Branches to receive `source` content'
+    required: true
+runs:
+  using: 'node14'
+  main: 'dist/index.js'

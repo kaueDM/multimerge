@@ -1,0 +1,24 @@
+{
+  "name": "multimerge",
+  "version": "1.0.0",
+  "description": "Merges a source branch into multiple branches",
+  "main": "dist/index.js",
+  "scripts": {},
+  "keywords": [
+    "github",
+    "merge",
+    "actions"
+  ],
+  "author": "kaueDM",
+  "license": "MIT",
+  "repository": {
+    "url": "github.com/kaueDM/multimerge"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
