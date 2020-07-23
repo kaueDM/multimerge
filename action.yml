@@ -13,5 +13,8 @@ inputs:
     description: 'Branches to receive `source` content'
     required: true
 runs:
-  using: 'node14'
+  using: 'node12'
   main: 'dist/index.js'
+branding:
+  icon: 'git-merge'
+  color: 'black'

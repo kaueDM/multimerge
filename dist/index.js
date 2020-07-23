@@ -2682,7 +2682,7 @@ const github = __webpack_require__(313)
 async function multimerge() {
   const token = core.getInput('token')
   const source = core.getInput('source')
-  const targets = core.getInput('targets')
+  const targets = core.getInput('targets').split(',')
   const octokit = github.getOctokit(token)
   const repo = github.context.repo
 
